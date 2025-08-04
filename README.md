@@ -1,4 +1,4 @@
-LinkedIn + Hunter.io Scraper (Python)
+# LinkedIn + Hunter.io Scraper (Python)
 
 This Python script automates the process of:
 
@@ -11,7 +11,9 @@ Ideal for freelancers offering:
 - Business email collection
 - Sales outreach data
 
-🛠 Requirements
+---
+
+## 🛠 Requirements
 
 - Python 3.x
 - Google Chrome + ChromeDriver
@@ -19,7 +21,59 @@ Ideal for freelancers offering:
 - Hunter.io API Key
 - LinkedIn account
 
-⚙️ Setup
+---
+
+## ⚙️ Setup
 
 ```bash
 pip install selenium pandas requests
+```
+
+Download ChromeDriver from:  
+[https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
+
+---
+
+## 🔧 Configuration
+
+Edit `main.py` file:
+
+```python
+LINKEDIN_EMAIL = 'your_email_here'
+LINKEDIN_PASS = 'your_password_here'
+HUNTER_API_KEY = 'your_hunter_api_key_here'
+KEYWORD = 'CEO Lahore'
+RESULTS_LIMIT = 10
+```
+
+---
+
+## ▶️ Run
+
+```bash
+python main.py
+```
+
+---
+
+## 📤 Output
+
+Script will create a file: `linkedin_leads_with_email.csv`
+
+| name       | title             | company     | domain         | email              |
+|------------|-------------------|-------------|----------------|--------------------|
+| Ali Khan   | CEO at TechCorp   | TechCorp    | techcorp.com   | ali@techcorp.com   |
+
+---
+
+## ⚠️ Disclaimer
+
+- LinkedIn scraping may violate their Terms of Service. Use responsibly.
+- Hunter.io has daily request limits (25 requests/day on free plan).
+- This script is for educational and personal use only.
+
+---
+
+## 👨‍💻 Author
+
+Created by [MMKhokhar](https://github.com/MMKhokhar)
